@@ -12,12 +12,12 @@
 
  :root {
   /* colors */
-  --link-color: #035fe6;
+  --link-color: white;
   --link-hover-color: #136ff6;
-  --background-color: #fff;
-  --overlay-background-color: #eee;
+  --background-color: black;
+  --overlay-background-color: black;
   --highlight-background-color: #ccc;
-  --text-color: #000;
+  --text-color: white;
 
   /* fonts */
   --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
@@ -70,8 +70,14 @@ h4, h5, h6 {
   scroll-margin: calc(var(--nav-height) + 1em);
 }
 
-h1 { font-size: var(--heading-font-size-xxl) }
-h2 { font-size: var(--heading-font-size-xl) }
+h1 {
+  font-size: var(--heading-font-size-xl);
+  text-align: center;
+}
+h2 {
+  font-size: var(--heading-font-size-m);
+  text-align: center
+}
 h3 { font-size: var(--heading-font-size-l) }
 h4 { font-size: var(--heading-font-size-m) }
 h5 { font-size: var(--heading-font-size-s) }
