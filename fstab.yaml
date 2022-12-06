@@ -1,2 +1,5 @@
 mountpoints:
   /: https://adobe-my.sharepoint.com/:f:/r/personal/pfaffm_adobe_com/Documents/ch?csf=1&web=1&e=mPLxtf
+
+folders:
+  /strips/: /templates/default
