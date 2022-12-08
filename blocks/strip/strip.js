@@ -18,4 +18,20 @@ export default async function decorate(block) {
 
   block.querySelector('div').replaceWith(h2)
   block.querySelector('div').replaceWith(createOptimizedPicture(imgSource, imgAlt))
+
+  // prev link
+  const prevStrip = document.querySelector('meta[name="chprev"]')['content']
+  const prev = document.createElement('a')
+  prev.setAttribute('href', prevStrip)
+  prev.innerText = "Prev"
+  block.appendChild(prev)
+
+  // next link
+  const nextStrip = document.querySelector('meta[name="chnext"]')['content']
+  const next = document.createElement('a')
+  next.setAttribute('href', nextStrip)
+  next.innerText = "Next"
+  block.appendChild(next)
+
+
 }
